@@ -21,7 +21,7 @@ export default function Home() {
           style={{ '--d': '0ms', left: 'calc(50% + 80px)', width: 'calc(50% - 56px)', height: '100%' } as React.CSSProperties}
         >
           <polygon
-            points="0,10 100,5 100,130 0,130"
+            points="0,10 100,10 100,130 0,130"
             fill="var(--color-navy)"
             stroke="var(--color-navy)"
             strokeWidth="48"
@@ -46,7 +46,7 @@ export default function Home() {
               width={452}
               height={470}
               priority
-              className="fade-in portrait-trapezoid portrait-flush-bottom block min-w-0 w-full max-w-sm object-cover"
+              className="fade-in block min-w-0 w-full max-w-sm object-cover"
               style={{ '--d': '250ms' } as React.CSSProperties}
             />
             <a
