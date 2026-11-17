@@ -30,7 +30,7 @@ export default function About() {
             alt="Trevor Drury"
             width={452}
             height={470}
-            className="portrait-trapezoid w-full object-cover"
+            className="portrait-trapezoid portrait-flush-bottom w-full object-cover"
           />
           <ul className="mt-8 divide-y divide-line border-y border-line text-sm">
             {quals.map((q) => <li key={q} className="py-3">{q}</li>)}
