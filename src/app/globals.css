@@ -36,9 +36,9 @@ h1, h2, h3 { text-wrap: balance; }
 @media (min-width: 1024px) { .wrap { padding-inline: 3rem; } }
 
 /* 12-column grid inside .wrap (laptop up). Stacks on smaller screens. */
-.grid-12 { display: grid; gap: 2.5rem; }
+.grid-12 { display: grid; gap: 1.25rem; }   /* tighter gap between stacked blocks on mobile, e.g. heading and copy */
 @media (min-width: 1024px) {
-  .grid-12 { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 2rem; }
+  .grid-12 { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 2rem; row-gap: 2.5rem; }
   .col-lead { grid-column: 1 / span 5; }   /* title / label: columns 1-5 */
   .col-main { grid-column: 7 / span 6; }   /* content: columns 7-12 */
   .col-lead-offset { grid-column: 2 / span 4; }  /* columns 2-5 */
@@ -149,3 +149,17 @@ h1, h2, h3 { text-wrap: balance; }
 /* Last band before the footer: slanted top only, so the join with the footer is a straight edge */
 .slant-top { --slant: 1.25rem; clip-path: polygon(0 var(--slant), 100% 0, 100% 100%, 0 100%); }
 @media (min-width: 1024px) { .slant-top { --slant: 2.5rem; } }
+
+/* Home hero, mobile: navy band behind the portrait row so the white LinkedIn link stands out (laptop up uses the SVG panel) */
+.hero-band::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -1.5rem;
+  right: -1.5rem;
+  top: 22%;
+  bottom: 0;
+  background: var(--color-navy);
+  clip-path: polygon(0 1.25rem, 100% 0, 100% 100%, 0 100%);
+}
+@media (min-width: 1024px) { .hero-band::before { display: none; } }

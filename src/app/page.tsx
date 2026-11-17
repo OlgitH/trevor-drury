@@ -29,16 +29,16 @@ export default function Home() {
             vectorEffect="non-scaling-stroke"
           />
         </svg>
-        <div className="wrap grid-12 items-center pt-8 md:pt-12">
+        <div className="wrap grid-12 items-center pt-14 md:pt-12">
           <div className="col-lead lg:self-end lg:pb-14">
             <h1 style={{ '--d': '450ms' } as React.CSSProperties} className="fade-in text-4xl leading-[1.05] sm:text-5xl xl:text-6xl">Public access barrister</h1>
             <p style={{ '--d': '600ms' } as React.CSSProperties} className="fade-in mt-2 font-serif text-xl font-bold text-teal-ink">Expert in Construction Dispute Resolution</p>
-            <div style={{ '--d': '750ms' } as React.CSSProperties} className="fade-in mt-10 flex flex-col items-start gap-3 font-serif text-xl font-semibold text-navy">
+            <div style={{ '--d': '750ms' } as React.CSSProperties} className="fade-in mt-7 flex flex-col items-start gap-3 lg:mt-10 font-serif text-lg font-semibold text-navy lg:text-xl">
               <Link href="/contact/" className="link-line">Make an enquiry →</Link>
               <Link href="/public-access/" className="link-line">How Public Access works →</Link>
             </div>
           </div>
-          <div className="col-main relative self-end">
+          <div className="hero-band col-main relative mt-3 self-end lg:mt-0">
           <div className="flex items-end gap-6">
             <Image
               src="/images/trevor-drury-head.jpg"
