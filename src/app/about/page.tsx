@@ -62,7 +62,7 @@ export default function About() {
           </p>
         </div>
       </section>
-      <section className="bg-stone">
+      <section className="slant-band bg-stone">
         <div className="wrap grid-12 py-24">
           <div className="col-lead-offset">
             <span aria-hidden className="bar" />

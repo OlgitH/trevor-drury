@@ -6,7 +6,7 @@ export default function PageHero({
   lead?: string
 }) {
   return (
-    <section data-hero className="bg-sand">
+    <section data-hero className="slant-bottom bg-sand">
       <div className="wrap grid-12 py-20 md:py-28">
         <div className="col-hero-title">
           <h1 className="fade-in text-4xl leading-[1.1] md:text-6xl" style={{ '--d': '150ms' } as React.CSSProperties}>{title}</h1>

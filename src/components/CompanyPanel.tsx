@@ -6,7 +6,7 @@ import { company, companyLink } from '@/content/site'
  */
 export default function CompanyPanel({ heading = 'Need something other than legal advice?' }: { heading?: string }) {
   return (
-    <section className="bg-stone">
+    <section className="slant-band bg-stone">
       <div className="wrap grid-12 py-24">
         <div className="col-lead-offset">
           <span aria-hidden className="bar" />

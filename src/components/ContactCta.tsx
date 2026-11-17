@@ -3,7 +3,7 @@ import { site } from '@/content/site'
 
 export default function ContactCta({ heading = 'Discuss your dispute' }: { heading?: string }) {
   return (
-    <section className="bg-navy text-white">
+    <section className="slant-top bg-navy text-white">
       <div className="wrap grid-12 py-24">
         <div className="col-lead-offset">
           <span aria-hidden className="bar bar-light" />

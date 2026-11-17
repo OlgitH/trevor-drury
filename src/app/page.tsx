@@ -8,8 +8,8 @@ import { site } from '@/content/site'
 export default function Home() {
   return (
     <>
-      <section data-hero className="relative isolate overflow-hidden bg-sand">
-        {/* Turquoise panel (laptop up): rounded top-left corner; its top edge runs out to the hero's top-right corner and the shape bleeds off the bottom of the hero. Previously the top and bottom edges ran out to the hero's
+      <section data-hero className="slant-bottom relative isolate overflow-hidden bg-sand">
+        {/* Navy panel (laptop up): sharp top-left corner; its top edge runs out to the hero's top-right corner and the shape bleeds off the bottom of the hero. Previously the top and bottom edges ran out to the hero's
             top-right and bottom-right corners. Its left edge sits 2.5rem inside the portrait (col 7 starts at 50% + 1rem).
             The polygon's stroke has round joins, so corners are rounded; the stroke is 48px wide, so the
             polygon is inset by 24px. */}
@@ -22,23 +22,23 @@ export default function Home() {
         >
           <polygon
             points="0,10 100,5 100,130 0,130"
-            fill="var(--color-teal-ink)"
-            stroke="var(--color-teal-ink)"
+            fill="var(--color-navy)"
+            stroke="var(--color-navy)"
             strokeWidth="48"
-            strokeLinejoin="round"
+            strokeLinejoin="miter"
             vectorEffect="non-scaling-stroke"
           />
         </svg>
-        <div className="wrap grid-12 items-center py-8 md:py-12">
-          <div className="col-lead">
+        <div className="wrap grid-12 items-center pt-8 md:pt-12">
+          <div className="col-lead lg:self-end lg:pb-14">
             <h1 style={{ '--d': '450ms' } as React.CSSProperties} className="fade-in text-4xl leading-[1.05] sm:text-5xl xl:text-6xl">Public access barrister</h1>
-            <p style={{ '--d': '600ms' } as React.CSSProperties} className="fade-in mt-2 font-garamond text-xl font-bold text-teal-ink">Expert in Construction Dispute Resolution</p>
+            <p style={{ '--d': '600ms' } as React.CSSProperties} className="fade-in mt-2 font-serif text-xl font-bold text-teal-ink">Expert in Construction Dispute Resolution</p>
             <div style={{ '--d': '750ms' } as React.CSSProperties} className="fade-in mt-10 flex flex-col items-start gap-3 font-serif text-xl font-semibold text-navy">
               <Link href="/contact/" className="link-line">Make an enquiry →</Link>
               <Link href="/public-access/" className="link-line">How Public Access works →</Link>
             </div>
           </div>
-          <div className="col-main relative">
+          <div className="col-main relative self-end">
           <div className="flex items-end gap-6">
             <Image
               src="/images/trevor-drury-head.jpg"
@@ -46,7 +46,7 @@ export default function Home() {
               width={452}
               height={470}
               priority
-              className="fade-in portrait-trapezoid min-w-0 w-full max-w-sm object-cover"
+              className="fade-in portrait-trapezoid portrait-flush-bottom block min-w-0 w-full max-w-sm object-cover"
               style={{ '--d': '250ms' } as React.CSSProperties}
             />
             <a
@@ -54,15 +54,15 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               style={{ '--d': '900ms' } as React.CSSProperties}
-              className="fade-in group mb-8 flex shrink-0 flex-col items-start gap-2 text-sm font-bold text-white"
+              className="fade-in group mb-14 flex shrink-0 flex-col items-start gap-2 text-sm font-bold text-white"
             >
               <span
                 aria-hidden
-                className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-base font-bold text-teal-ink"
+                className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-base font-bold text-navy"
               >
                 in
               </span>
-              <span className="whitespace-nowrap border-b border-white/60 group-hover:border-white">
+              <span className="whitespace-nowrap border-b border-white/60 pb-[2px] group-hover:border-white">
                 Follow on LinkedIn
               </span>
             </a>
@@ -102,7 +102,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-rich-black text-white">
+      <section className="slant-band bg-rich-black text-white">
         <div className="wrap grid-12 py-24">
           <div className="col-lead">
             <h2 className="text-3xl !text-white md:text-4xl">Practice areas</h2>
@@ -141,7 +141,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="bg-navy text-white">
+      <section className="slant-band bg-navy text-white">
         <div className="wrap grid-12 py-24">
           <div className="col-lead-offset">
             <span aria-hidden className="bar bar-light" />
