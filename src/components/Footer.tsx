@@ -54,7 +54,8 @@ export default function Footer() {
             </p>
             <p className="flex flex-wrap gap-x-5 gap-y-1">
               <Link href="/complaints/" className="hover:text-white">Complaints</Link>
-              <Link href="/privacy/" className="hover:text-white">Privacy</Link>
+              <Link href="/privacy/" className="hover:text-white">Privacy policy</Link>
+              <Link href="/cookies/" className="hover:text-white">Cookie notice</Link>
               <Link href="/disclaimer/" className="hover:text-white">Disclaimer</Link>
             </p>
           </div>
