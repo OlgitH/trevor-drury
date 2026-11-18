@@ -3,10 +3,17 @@ import { company, companyLink, copyright, nav, site } from '@/content/site'
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-deep text-white/80">
+    <footer className="relative -mt-px bg-navy-deep text-white/80">
       <div className="wrap grid-12 py-16">
         <div className="col-lead">
-          <p className="font-serif text-3xl text-white">{site.name}</p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo.png"
+            alt={`Chambers of ${site.name}`}
+            width={1250}
+            height={291}
+            className="h-10 w-auto brightness-0 invert"
+          />
           <p className="mt-6 max-w-md text-sm leading-relaxed">
             Public Access barrister specialising in building, construction and engineering disputes.
             {' '}{site.regulator}.
@@ -25,7 +32,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10">
+      <div>
         <div className="wrap grid-12 py-6">
           <nav aria-label="Footer" className="col-full flex flex-wrap gap-x-8 gap-y-2 text-xs uppercase tracking-[0.16em] text-white/80">
             {nav.map((n) => (
@@ -35,7 +42,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10">
+      <div>
         <div className="wrap grid-12 !gap-y-4 py-6 text-xs text-white/55">
           <div className="col-full flex flex-col gap-3 md:flex-row md:justify-between">
             <p className="font-semibold text-white/80">

@@ -102,7 +102,7 @@ export default function Header() {
         </button>
       </div>
       {open && (
-        <nav id="mobile-nav" aria-label="Mobile" className="border-t border-white/15 bg-navy-deep text-white lg:hidden">
+        <nav id="mobile-nav" aria-label="Mobile" className="bg-navy-deep text-white lg:hidden">
           <div className="wrap flex flex-col py-4">
             {nav.map((n) => (
               <Link

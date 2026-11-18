@@ -16,7 +16,7 @@ export default function ContactCta({ heading = 'Discuss your dispute' }: { headi
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="/contact/" className="btn-keyline btn-keyline-inverse">Make an enquiry</Link>
-            <a href={`tel:${site.phoneHref}`} className="btn-keyline btn-keyline-inverse">{site.phone}</a>
+            <a href={`tel:${site.phoneHref}`} className="btn-keyline btn-keyline-inverse" aria-label={`Call ${site.phone}`}>Call</a>
           </div>
         </div>
       </div>
